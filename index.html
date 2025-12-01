@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kavya</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            /* vertical alignment */
+            gap: 70px;
+            /* space between image and heading */
+            font-size: large;
+            color: black;
+            width: 100%;
+            height: 500px;
+            background-color: white;
+            border-radius: 24px;
+
+        }
+
+
+        .image {
+            width: 30px;
+            height: 30px;
+        }
+
+
+        body {
+            background-color: rgb(153, 209, 218);
+            border-color: blue;
+            border-style: solid;
+            border-width: 1px;
+            /* padding: 10px; */
+            width: 70%;
+            justify-content: center;
+            align-items: center;
+            margin-inline: auto;
+            border-radius: 24px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+                4px 4px 10px rgba(0, 0, 0, 0.2),
+                6px 6px 15px rgba(0, 0, 0, 0.1);
+
+            margin-top: 90px;
+        }
+
+        div.relative img {
+            position: relative;
+            width: 500px;
+            height: 400px;
+        }
+
+        #mainImg {
+            position: absolute;
+            width: 500px;
+            height: 400px;
+            top: 120px;
+            left: 10;
+        }
+
+        .typewriter {
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 3px solid pink;
+            width: 0;
+            animation: typing 2s steps(5) forwards, blink 0.7s infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 120px;
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        h1 {
+            color: rgb(57, 120, 247);
+        }
+
+        h3 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+
+            <div class="relative">
+                <img
+                    src="https://as1.ftcdn.net/v2/jpg/05/16/69/48/1000_F_516694893_PSx1J8NLVJlYJ52BTdBcpEbvNLWQQMvQ.jpg" />
+            </div>
+            <div class="absolute">
+                <img id="mainImg"
+                    src="https://static.vecteezy.com/system/resources/thumbnails/058/989/364/small/woman-with-glasses-working-on-laptop-in-office-png.png"
+                    alt="Image">
+            </div>
+        </div>
+
+        <div>
+            <h1 class="typewriter">KAVYA</h1>
+            <h3>ABOUT ME</h3>
+            <p>"I am Kavya I am studying Computer Science and Engineering at V.S.M. College of Engineering,
+                Ramachandrapuram."</p>
+            <h3>SKILLS</h3>
+            <p> Here are some of the technologies.:</p>
+            <ul>
+                <li>HTML&CSS</li>
+                <li>Node.js</li>
+                <li>React</li>
+                <li>Angular</li>
+                <li>Web Pack</li>
+            </ul>
+            <h3>CONTACT ME</h3>
+
+            <a href="https://r.search.yahoo.com/_ylt=Awr1RUa6kCVpcgIA34S7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1765279162/RO=10/RU=https%3a%2f%2fen.wikipedia.org%2fwiki%2fFacebook/RK=2/RS=.FnfQb3tUQ4sxioZMKPhPeFs6hU-"
+                target="_blank"> <img class="image"
+                    src="https://static.vecteezy.com/system/resources/previews/018/910/719/non_2x/facebook-logo-facebook-icon-free-free-vector.jpg"></a>
+            <a href="https://r.search.yahoo.com/_ylt=AwrKFZEwkiVpgAIAsQ.7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1765279537/RO=10/RU=https%3a%2f%2fen.wikipedia.org%2fwiki%2fInstagram/RK=2/RS=BdBvo1RUa8cVX_0IwAANNVM2iow-"
+                target="_blank">
+                <img class="image"
+                    src="https://img.freepik.com/free-vector/instagram-icon_1057-2227.jpg?semt=ais_hybrid&w=740&q=80"></a>
+            <a href="https://r.search.yahoo.com/_ylt=Awrx_aaZkiVpBwIADwC7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1765279642/RO=10/RU=https%3a%2f%2fen.wikipedia.org%2fwiki%2fLinkedIn/RK=2/RS=C7Qoh6WUUvb2RFeYdNEcAki7xag-"
+                target="_blank">
+                <img class="image"
+                    src="https://static.vecteezy.com/system/resources/previews/023/986/926/original/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png"></a>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
